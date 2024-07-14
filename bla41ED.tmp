@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqsuk88vdar0c"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_1nsrd"]
+[ext_resource type="Script" path="res://DrawingArea.gd" id="2_eouih"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1nsrd")
+
+[node name="DrawingArea" type="Panel" parent="."]
+offset_right = 1153.0
+offset_bottom = 648.0
+script = ExtResource("2_eouih")
+
+[node name="RefreshButton" type="Button" parent="."]
+offset_left = 1078.0
+offset_top = 3.0
+offset_right = 1146.0
+offset_bottom = 34.0
+text = "Refresh"
+
+[node name="BrushSizeSlider" type="HSlider" parent="."]
+clip_contents = true
+offset_left = 967.0
+offset_top = 621.0
+offset_right = 1138.0
+offset_bottom = 637.0
+min_value = 1.0
+max_value = 50.0
+value = 1.0
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+offset_left = 870.0
+offset_top = 609.0
+offset_right = 930.0
+offset_bottom = 640.0
+text = "Colour"
+color = Color(1, 1, 1, 1)
